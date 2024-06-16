@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px 14px;
+  background: $cl-main-gold;
+  color: $cl-text--primary;
+  font-weight: 500;
+  height: auto;
+  &--lg {
+    font-size: 20px;
+    padding: 16px 20px;
+  }
+  &--stretched {
+    width: 100%;
+  }
+
+}

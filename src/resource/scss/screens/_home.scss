@@ -1,0 +1,62 @@
+.signin {
+  h1 {
+    font-size: 68px;
+    font-weight: 900;
+    color: $cl-main-black;
+    margin-bottom: 24px;
+  }
+
+  &-intro {
+    color: $cl-text--secondary;
+    margin-bottom: 16px;
+    display: flex;
+
+    a {
+      color: $cl-main-gold;
+      font-weight: 500;
+
+      &:hover {
+        color: $cl-main-gold;
+      }
+    }
+  }
+
+  form {
+    input {
+      padding: 16px 24px;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .ant-form-item-explain {
+      font-size: 14px;
+      font-weight: 500;
+      color: $cl-main-gold;
+    }
+  }
+
+  &-social {
+    margin-top: 24px;
+
+    span {
+      color: $cl-text--primary;
+      margin-bottom: 16px;
+      display: flex;
+    }
+
+    a {
+      padding: 16px;
+      margin-right: 16px;
+      border-radius: 50%;
+      border: 2px solid $cl-main-black;
+      .ant-image {
+        display: flex;
+        width: 20px !important;
+        height: 20px !important;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

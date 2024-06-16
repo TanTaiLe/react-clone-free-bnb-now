@@ -20,6 +20,9 @@ export default defineConfig(({ command, mode }) => {
     },
     css: {
       preprocessorOptions: {
+        sass: {
+
+        },
         less: {
           javascriptEnabled: true,
           additionalData: "@root-entry-name: default;",

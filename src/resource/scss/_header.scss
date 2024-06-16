@@ -1,0 +1,12 @@
+.header {
+  background: $cl-main-black;
+  padding: 12px 0;
+
+  &-contact {
+    color: $cl-main-grey;
+    a {
+      color: $cl-main-gold !important;
+      margin-left: 8px;
+    }
+  }
+}
