@@ -6,10 +6,11 @@ interface Props {
   stretch?: Boolean
   size?: String
   style?: Object
+  htmlType?: any
   // any props that come into the component
 }
 
-export const CustomButton: FC<Props> = ({ children, stretch, size, style }, props) => {
+export const CustomButton: FC<Props> = ({ children, stretch, size, style, htmlType }, props) => {
   return (
     <Button
       className={`
@@ -18,6 +19,7 @@ export const CustomButton: FC<Props> = ({ children, stretch, size, style }, prop
       btn--${size}
     `}
       style={style}
+      htmlType={htmlType}
     >
       {children}
     </Button>

@@ -1,6 +1,9 @@
 .header {
   background: $cl-main-black;
-  padding: 12px 0;
+  padding: 12px 24px;
+  .logo {
+    width: calc(18% - 16px);
+  }
 
   &-contact {
     color: $cl-main-grey;

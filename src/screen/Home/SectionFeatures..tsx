@@ -5,15 +5,15 @@ import { CustomSection } from "@component/DesignSystem/CustomSection";
 const { Text, Title } = Typography;
 const features = [
   {
-    img: '/feature-1.png',
+    img: '/images/feature-1.png',
     title: 'Instantly Withdraw',
     desc: 'You can withdraw your mined BNB instantly once you reach the minimum payment threshold, without any delays or freezing! BNB Smart Chain (BEP20).'
   }, {
-    img: '/feature-2.png',
+    img: '/images/feature-2.png',
     title: 'Instantly Connect',
     desc: 'We are Simple, Add your BNB wallet address, Mining Start immediately. In case you upgrade, mining starts instantly once we confirmed payment.'
   }, {
-    img: '/feature-3.png',
+    img: '/images/feature-3.png',
     title: 'No Maintenance Fees',
     desc: 'We are super transparent, No maintenance fees for premium plans. No hidden fees or commission. Everything is visible to you. Contact Us: contacts@freebnbnow.com.'
   }

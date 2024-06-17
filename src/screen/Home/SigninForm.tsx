@@ -1,25 +1,29 @@
 import { FC } from "react";
 import type { FormProps } from 'antd';
+import { useNavigate } from "react-router-dom";
 import { Typography, Row, Col, Flex, Image } from 'antd';
 import { Form, Input } from 'antd';
+import { trans } from "@language/index.ts";
 import { CustomButton } from "@component/DesignSystem/CustomButton";
 
 
 const { Text, Link, Title } = Typography;
 
 type FieldType = {
-  username?: string;
+  address?: string;
 };
 
-// const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
-//   console.log('Success:', values);
-// };
+const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
+  console.log('Success:', values);
 
-// const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
-//   console.log('Failed:', errorInfo);
-// };
+};
+
+const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
+  console.log('Failed:', errorInfo);
+};
 
 export const SigninForm: FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="signin">
       <Title>GET FREE 7 TH/S</Title>
@@ -28,21 +32,26 @@ export const SigninForm: FC = () => {
         name="signin"
         layout="inline"
         initialValues={{ remember: true }}
-        // onFinish={onFinish}
-        // onFinishFailed={onFinishFailed}
+        onFinish={() => navigate('/dashboard')}
+        onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
         <Row style={{ width: '100%' }}>
           <Col span={16}>
             <Form.Item<FieldType>
-              name="username"
+              name="address"
               help="Minimal withdrawal: 0.0000001 BNB"
             >
               <Input placeholder="0xCc8E6d00C17eB431350C6c50XXX" />
             </Form.Item>
           </Col>
           <Col span={8}>
-            <CustomButton stretch size="lg" style={{ fontWeight: 700 }}>
+            <CustomButton
+              stretch
+              size="lg"
+              style={{ fontWeight: 700 }}
+              htmlType="submit"
+            >
               Start Mining Now
             </CustomButton>
           </Col>
@@ -54,13 +63,13 @@ export const SigninForm: FC = () => {
           <Link href="https://x.com/freebnbnow">
             <Image
               preview={false}
-              src="/twitter.png"
+              src="/images/twitter.png"
             />
           </Link>
           <Link href="https://t.me/freebnbnowcom">
             <Image
               preview={false}
-              src="/telegram.png"
+              src="/images/telegram.png"
             />
           </Link>
         </Flex>

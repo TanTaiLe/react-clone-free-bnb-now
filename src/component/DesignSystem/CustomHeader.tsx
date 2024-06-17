@@ -1,21 +1,26 @@
 
 import { FC } from "react"
-import { Flex, Typography, Image } from "antd"
+import { Flex, Typography, Image, Menu } from "antd"
+import { useLocation } from "react-router-dom"
+import { CustomMenu } from "./CustomMenu"
 
 const { Text, Link } = Typography
 
 export const CustomHeader: FC = () => {
+  const location = useLocation();
+  console.log(location.pathname)
   return (
     <header className="header">
-      <div className="container">
+      <div className={`${location.pathname != '/dashboard' && 'container'}`}>
         <Flex justify="space-between" align="center">
-          <Link href="/">
+          <Link href="/" className="logo">
             <Image
               preview={false}
               width={100}
-              src="/sample-logo.png"
+              src="/images/sample-logo.png"
             />
           </Link>
+          {location.pathname == '/dashboard' && <CustomMenu />}
 
           <Text className="header-contact">
             Contact:

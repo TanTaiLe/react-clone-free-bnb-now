@@ -12,7 +12,7 @@ export const SectionTop: FC = () => {
           <Image
             preview={false}
             width={'100%'}
-            src="/coin.png"
+            src="/images/coin.png"
           />
         </Col>
         <Col span={13} offset={2}>
