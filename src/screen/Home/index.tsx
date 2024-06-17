@@ -54,22 +54,22 @@ export const Home = () => {
       </header>
       <Content>
         <CustomSection>
-          <Row align="middle">
-            <Col span={8}>
+          <Row align="middle" gutter={{ xs: 8, sm: 16, lg: 24 }}>
+            <Col span={9}>
               <Image
                 preview={false}
                 width={'100%'}
                 src="/coin.png"
               />
             </Col>
-            <Col span={13} offset={3}>
+            <Col span={13} offset={2}>
               <SigninForm />
             </Col>
           </Row>
         </CustomSection>
         <CustomSection className="features">
           <Title level={2}>Features</Title>
-          <Row>
+          <Row gutter={{ xs: 8, sm: 16, lg: 24 }}>
             {
               features.length != 0 && features.map((data, key) =>
                 <Col span={8} key={key}>
