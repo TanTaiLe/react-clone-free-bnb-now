@@ -1,9 +1,7 @@
 .signin {
   h1 {
-    font-size: 68px;
-    font-weight: 900;
-    color: $cl-main-black;
-    margin-bottom: 24px;
+    font-weight: 900 !important;
+    margin-bottom: 24px !important;
   }
 
   &-intro {
@@ -14,7 +12,7 @@
     a {
       color: $cl-main-gold;
       font-weight: 500;
-
+      margin: 0 4px;
       &:hover {
         color: $cl-main-gold;
       }
@@ -58,5 +56,16 @@
         }
       }
     }
+  }
+}
+
+.features {
+  background: #f4f4f4;
+  text-align: center;
+  img {
+    width: 240px !important;
+  }
+  span {
+    line-height: 26px;
   }
 }

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import type { FormProps } from 'antd';
 import { Typography, Row, Col, Flex, Image } from 'antd';
-import { Button, Form, Input } from 'antd';
+import { Form, Input } from 'antd';
 import { CustomButton } from "@component/DesignSystem/CustomButton";
 
 
@@ -42,9 +42,6 @@ export const SigninForm: FC = () => {
             </Form.Item>
           </Col>
           <Col span={8}>
-            {/* <Button style={{ width: '100%' }} type="primary" htmlType="submit">
-              Start Mining Now
-            </Button> */}
             <CustomButton stretch size="lg" style={{ fontWeight: 700 }}>
               Start Mining Now
             </CustomButton>
