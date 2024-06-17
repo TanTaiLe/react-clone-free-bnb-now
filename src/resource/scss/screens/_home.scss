@@ -69,3 +69,22 @@
     line-height: 26px;
   }
 }
+
+.transactions {
+  text-align: center;
+  &-item {
+    margin-bottom: 24px;
+  }
+  h3 {
+    text-align: left;
+  }
+  table {
+    border: 1px solid $cl-main-grey !important;
+    th {
+      background-color: $cl-main-gold !important;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
