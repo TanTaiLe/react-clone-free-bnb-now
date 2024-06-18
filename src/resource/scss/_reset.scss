@@ -44,4 +44,12 @@ h3 {
     min-height: unset !important;
     margin-bottom: -8px !important;
   }
+  &.nobody {
+    .ant-card-head {
+      padding: 24px !important;
+    }
+    .ant-card-body {
+      display: none;
+    }
+  }
 }

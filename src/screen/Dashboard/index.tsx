@@ -3,6 +3,9 @@ import { Col, Layout, Row, Space, Typography } from "antd";
 import { SectionMiner } from "./SectionMiner";
 import { SectionSurvey } from "./SectionSurvey";
 import { SectionPowerPackages } from "./SectionPowerPackages";
+import { SectionBuyPower } from "./SectionBuyPower";
+import { SectionCheckout } from "./SectionCheckout";
+import { SectionReferralProgram } from "./SectionReferralProgram";
 const { Sider, Content } = Layout;
 
 const { Title } = Typography
@@ -26,16 +29,20 @@ export const Dashboard = () => {
         </Sider>
         <Content className="dashboard-content">
           <Title level={2}>Dashboard</Title>
-          <Row>
-            <Col span={17}>
+          <Row gutter={24}>
+            <Col span={15}>
               <Space direction="vertical" size="large">
                 <SectionMiner />
                 <SectionSurvey />
                 <SectionPowerPackages />
+                <SectionBuyPower />
               </Space>
             </Col>
-
-            <Col span={7}>
+            <Col span={9}>
+              <Space direction="vertical" size="large">
+                <SectionCheckout />
+                <SectionReferralProgram />
+              </Space>
             </Col>
           </Row>
         </Content>

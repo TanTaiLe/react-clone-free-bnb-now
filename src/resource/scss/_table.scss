@@ -1,0 +1,17 @@
+.table {
+  width: 100%;
+  th {
+    background-color: transparent !important;
+    &::before {
+      display: none;
+    }
+  }
+  .ant-tag {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #DEF8EE;
+    color: #198D63;
+    padding: 4px 8px;
+    border: none;
+  }
+}

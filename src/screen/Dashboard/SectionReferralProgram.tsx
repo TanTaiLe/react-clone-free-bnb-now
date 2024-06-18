@@ -1,0 +1,25 @@
+import { CustomCard } from "@component/DesignSystem/CustomCard"
+import { FC } from "react"
+import { Flex, Typography, Image, Space, Tag } from "antd"
+import { CustomButton } from "@component/DesignSystem/CustomButton"
+
+const { Text } = Typography
+
+export const SectionReferralProgram: FC = () => {
+  return (
+    <CustomCard title="Referral program">
+      <Text>Your referral link</Text>
+      <Flex align="center" justify="space-between">
+        <Text italic>https://freebnbnow.com/ref/193822853358</Text>
+        <CustomButton iconOnly>
+          <Image src="/images/dashboard/copy.png" width={20} />
+        </CustomButton>
+      </Flex>
+
+      <Flex align="center">
+        <Text strong>Referred users</Text>
+        <Tag color="#E2F5FF" style={{ color: '#2578A6', marginLeft: 4 }}>0</Tag>
+      </Flex>
+    </CustomCard>
+  )
+}

@@ -1,5 +1,4 @@
 .dashboard {
-
   h1,
   h2,
   h3,
@@ -10,8 +9,39 @@
     margin-bottom: 24px !important;
   }
 
+  form {
+    background: #F4F4F4;
+    padding: 24px;
+    border-radius: 4px;
+    .input-tips {
+      font-size: 14px;
+      margin: 0 24px 0 8px;
+      color: $cl-main-gold;
+    }
+    .checkout {
+      * {
+        font-size: 14px;
+      }
+      &-label {
+        color: #9D9C9B;
+        width: 100px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  input {
+    height: 45px;
+  }
+
   &-content {
-    padding: 24px 48px;
+    padding: 24px 32px;
+  }
+
+  .miner {
+    &-label, &-value {
+      font-size: 14px;
+    }
   }
 
   .ant-card {

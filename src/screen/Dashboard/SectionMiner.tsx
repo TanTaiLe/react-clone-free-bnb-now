@@ -7,14 +7,14 @@ const { Text } = Typography
 
 export const SectionMiner: FC = () => {
   return (
-    <CustomCard title="Your miner">
+    <CustomCard title="Your miner" className='miner'>
       <Row gutter={24}>
         <Col span={8}>
           <Card>
             <Space direction="vertical" size="middle">
               <Space direction="vertical" size="small">
-                <Text>BNB to Harvest</Text>
-                <Text strong>0.000000727055 BNB</Text>
+                <Text className="miner-label">BNB to Harvest</Text>
+                <Text className="miner-value" strong>0.000000727055 BNB</Text>
               </Space>
               <CustomButton stretch>
                 Harvest
@@ -26,8 +26,8 @@ export const SectionMiner: FC = () => {
           <Card>
             <Space direction="vertical" size="middle">
               <Space direction="vertical" size="small">
-                <Text>Your Daily Profit</Text>
-                <Text strong>0 BNB</Text>
+                <Text className="miner-label">Your Daily Profit</Text>
+                <Text className="miner-value" strong>0 BNB</Text>
               </Space>
               <CustomButton stretch>
                 Buy TH/S
@@ -39,10 +39,10 @@ export const SectionMiner: FC = () => {
           <Card>
             <Space direction="vertical" size="middle">
               <Space direction="vertical" size="small">
-                <Text>Mining Speed</Text>
-                <Text strong>7 TH/S</Text>
+                <Text className="miner-label">Mining Speed</Text>
+                <Text className="miner-value" strong>7 TH/S</Text>
               </Space>
-              <CustomButton stretch>
+              <CustomButton stretch type={2}>
                 History
               </CustomButton>
             </Space>

@@ -1,13 +1,51 @@
 .btn {
-  padding: 10px 14px;
+  padding: 10px 24px;
   background: $cl-main-gold;
   color: $cl-text--primary;
   font-weight: 500;
   height: auto;
+  transition: .15 all ease;
+
+  &:hover {
+    background: lighten($cl-main-gold, 10%) !important;
+    color: $cl-text--primary !important;
+  }
+
+  &-type-2 {
+    background: $cl-main-black;
+    color: $cl-main-gold;
+
+    &:hover {
+      background: lighten($cl-main-black, 10%) !important;
+      color: $cl-main-gold !important;
+    }
+  }
+
+  &-type-3 {
+    background: transparent;
+    color: $cl-text--primary !important;
+    border: 1px solid $cl-main-black !important;
+
+    &:hover {
+      background: $cl-main-black !important;
+      color: #fff !important;
+    }
+  }
+
+  &-icon {
+    padding: 8px !important;
+  }
+
   &--lg {
     font-size: 20px;
     padding: 16px 20px;
   }
+
+  &--sm {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
   &--stretched {
     width: 100%;
   }

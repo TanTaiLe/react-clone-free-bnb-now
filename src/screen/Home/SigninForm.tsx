@@ -31,7 +31,6 @@ export const SigninForm: FC = () => {
       <Form
         name="signin"
         layout="inline"
-        initialValues={{ remember: true }}
         onFinish={() => navigate('/dashboard')}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
