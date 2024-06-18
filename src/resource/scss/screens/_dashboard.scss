@@ -13,4 +13,47 @@
   &-content {
     padding: 24px 48px;
   }
+
+  .ant-card {
+    span {
+      display: block;
+    }
+  }
+
+  .survey {
+    &-card {
+      cursor: pointer;
+      transition: .15s all ease;
+
+      &:hover {
+        background-color: #FFF9EB;
+      }
+    }
+
+    &-item {
+      text-align: center;
+      row-gap: 12px;
+
+      .title {
+        margin-bottom: 4px !important;
+        font-weight: 600 !important;
+      }
+
+      .sub-title {
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .time {
+        &-icon {
+          width: 14px;
+          margin-right: 4px;
+        }
+
+        &-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

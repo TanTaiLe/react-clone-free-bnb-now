@@ -9,6 +9,7 @@ const themeConfig: ThemeConfig = {
     colorPrimaryBorder: "#FAC232",
     borderRadius: 4,
     fontSize: 16,
+    lineHeight: 1.2
   },
 };
 

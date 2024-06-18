@@ -21,3 +21,27 @@ h2 {
 h3 {
   font-size: 24px !important;
 }
+.ant-space {
+  display: flex !important;
+}
+.ant-image {
+  display: flex !important;
+  align-items: center;
+}
+.ant-rate-star {
+  margin: 0 1px !important;
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.card {
+  width: 100% !important;
+  box-shadow: 0 0 1px rgba(0,0,0,0.45);
+  .ant-card-head {
+    border: none !important;
+    padding: 24px 24px 0 !important;
+    min-height: unset !important;
+    margin-bottom: -8px !important;
+  }
+}
