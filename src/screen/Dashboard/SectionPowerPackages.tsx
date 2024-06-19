@@ -61,7 +61,7 @@ const data: DataType[] = [
     apr: 130
   }, {
     key: '2',
-    power: 100000000,
+    power: 10000000,
     bonus: 3636000,
     cost: 100,
     apr: 150

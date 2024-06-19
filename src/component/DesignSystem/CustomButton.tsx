@@ -9,10 +9,11 @@ interface Props {
   htmlType?: any
   type?: number
   iconOnly?: boolean
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
   // any props that come into the component
 }
 
-export const CustomButton: FC<Props> = ({ children, stretch, size, style, htmlType, type, iconOnly }) => {
+export const CustomButton: FC<Props> = ({ children, stretch, size, style, htmlType, type, iconOnly, onClick }) => {
   return (
     <Button
       className={`
@@ -24,6 +25,7 @@ export const CustomButton: FC<Props> = ({ children, stretch, size, style, htmlTy
     `}
       style={style}
       htmlType={htmlType}
+      onClick={onClick}
     >
       {children}
     </Button>
