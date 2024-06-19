@@ -2,12 +2,33 @@
   flex: none !important;
   min-width: unset !important;
   max-width: unset !important;
-  width: 15% !important;
   background: $cl-main-black !important;
-  @media(min-width: 1024px) {
-  width: 5% !important;
+
+  &.ant-layout-sider-collapsed {
+    .ant-menu-title-content {
+      display: none;
+    }
+  }
+
+  .ant-menu-item {
+    padding: 16px 24px;
+    height: auto;
+    line-height: normal;
+
+    .ant-image {
+      margin-right: 16px;
+    }
+
+    &-selected {
+      &::after {
+        content: '';
+        width: 4px;
+        background: $cl-main-gold;
+      }
+    }
   }
 }
+
 .ant-layout {
   background: none;
 }

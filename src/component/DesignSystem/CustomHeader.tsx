@@ -20,7 +20,7 @@ export const CustomHeader: FC = () => {
               src="/images/sample-logo.png"
             />
           </Link>
-          {location.pathname == '/dashboard' && <CustomMenu />}
+          {location.pathname != '/' && <CustomMenu />}
 
           <Text className="header-contact">
             Contact:

@@ -1,5 +1,5 @@
 import { Home } from "@screen/Home";
-import { Dashboard } from "@screen/Dashboard";
+import { Dashboard } from "@screen/Dashboard/screens/dashboard";
 import { Rewards } from "@screen/Dashboard/screens/rewards";
 import { Deposit } from "@screen/Dashboard/screens/deposit";
 import { Withdraw } from "@screen/Dashboard/screens/withdraw";
