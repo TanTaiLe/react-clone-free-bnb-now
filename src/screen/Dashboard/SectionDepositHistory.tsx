@@ -41,7 +41,10 @@ const data: DataType[] = [
 export const SectionDepositHistory: FC = () => {
   return (
     <CustomCard title="Deposit history">
-      <CustomTable columns={columns} dataSource={data} />
+      <CustomTable
+        columns={columns}
+      // dataSource={data} 
+      />
     </CustomCard>
   )
 }
