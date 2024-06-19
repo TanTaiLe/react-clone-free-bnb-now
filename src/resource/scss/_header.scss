@@ -12,4 +12,10 @@
       margin-left: 8px;
     }
   }
+  .ant-menu {
+    background-color: transparent;
+    &-item {
+      color: #ffffff;
+    }
+  }
 }

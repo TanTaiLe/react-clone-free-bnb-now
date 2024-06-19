@@ -2,6 +2,9 @@
   h1 {
     font-weight: 900 !important;
     margin-bottom: 24px !important;
+    @media(min-width: 1024px) {
+      font-size: 50px !important;
+    }
   }
 
   &-intro {
@@ -10,7 +13,7 @@
     display: flex;
 
     a {
-      color: $cl-main-gold;
+      color: $cl-text-in-white;
       font-weight: 500;
       margin: 0 4px;
       &:hover {
@@ -29,7 +32,7 @@
     .ant-form-item-explain {
       font-size: 14px;
       font-weight: 500;
-      color: $cl-main-gold;
+      color: $cl-text-in-white;
     }
   }
 
@@ -37,7 +40,7 @@
     margin-top: 24px;
 
     span {
-      color: $cl-text--primary;
+      color: $cl-text-in-white;
       margin-bottom: 16px;
       display: flex;
     }

@@ -6,6 +6,10 @@
   height: auto;
   transition: .15 all ease;
 
+  @media(min-width: 1024px) {
+    font-size: 14px;
+  }
+
   &:hover {
     background: lighten($cl-main-gold, 10%) !important;
     color: $cl-text--primary !important;
@@ -39,6 +43,9 @@
   &--lg {
     font-size: 20px;
     padding: 16px 20px;
+    @media(min-width: 1024px) {
+      font-size: 18px;
+    }
   }
 
   &--sm {
