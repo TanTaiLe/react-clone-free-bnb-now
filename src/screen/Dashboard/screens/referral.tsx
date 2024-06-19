@@ -3,17 +3,12 @@ import { Col, Layout, Row, Space, Typography } from "antd";
 import { SectionMiner } from "../SectionMiner";
 import { SectionCheckout } from "../SectionCheckout";
 import { SectionReferralProgram } from "../SectionReferralProgram";
+import { SectionReferralLink } from "../SectionReferralLink";
+import { SectionReferredUsers } from "../SectionReferredUsers";
 const { Sider, Content } = Layout;
 
 const { Title } = Typography
 
-
-const siderStyle: React.CSSProperties = {
-  textAlign: 'center',
-  lineHeight: '120px',
-  color: '#fff',
-  backgroundColor: '#1677ff',
-};
 
 
 export const Referral = () => {
@@ -21,16 +16,17 @@ export const Referral = () => {
     <Layout className="dashboard">
       <CustomHeader />
       <Layout>
-        <Sider width="15%" style={siderStyle}>
+        <Sider className="sider">
           Sider
         </Sider>
         <Content className="dashboard-content">
-          <Title level={2}>Dashboard</Title>
+          <Title level={2}>Referral</Title>
           <Row gutter={24}>
             <Col lg={17} xl={15}>
               <Space direction="vertical" size="large">
                 <SectionMiner />
-                
+                <SectionReferralLink />
+                <SectionReferredUsers />
               </Space>
             </Col>
             <Col lg={7} xl={9}>

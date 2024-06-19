@@ -11,7 +11,7 @@ export const CustomHeader: FC = () => {
   console.log(location.pathname)
   return (
     <header className="header">
-      <div className={`${location.pathname != '/dashboard' && 'container'}`}>
+      <div className={`${location.pathname == '/' && 'container'}`}>
         <Flex justify="space-between" align="center">
           <Link href="/" className="logo">
             <Image
