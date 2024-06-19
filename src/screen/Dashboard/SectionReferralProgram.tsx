@@ -6,6 +6,7 @@ import { CustomButton } from "@component/DesignSystem/CustomButton"
 const { Text } = Typography
 
 export const SectionReferralProgram: FC = () => {
+  
   return (
     <CustomCard className="referral-program" title="Referral program">
       <Text>Your referral link</Text>
