@@ -7,7 +7,6 @@
   h5,
   h6 {
     font-weight: 400 !important;
-    // margin-bottom: 24px !important;
   }
 
   form {
@@ -17,12 +16,17 @@
 
     .input-tips {
       font-size: 14px;
-      margin: 0 24px 0 8px;
+      margin: 0 24px 0 4px;
       color: $cl-text-in-white;
 
-      @media(min-width: 1024px) {
-        font-size: 12px;
-        margin: 0 0px 0 8px;
+      @media(min-width: 1200px) {
+        font-size: 14px;
+        margin: 0 0px 0 4px;
+      }
+      @media(min-width: 1023px) {
+        font-size: 14px !important;
+        margin: 0 4px 0 0;
+        
       }
     }
 
@@ -36,9 +40,7 @@
         width: 100px;
         margin-right: 8px;
 
-        @media(min-width: 1024px) {
-          width: 100px;
-        }
+        
       }
     }
   }
@@ -61,17 +63,24 @@
 
     .ant-space-item {
       strong {
-        font-size: 15px !important;
-
-        @media(min-width: 1024px) {
-          font-size: 12px;
+        font-size: 14px !important;
+        
+        @media(min-width: 1200px) {
+          font-size: 16px !important;
+        }
+        @media(min-width: 1023px) {
+          font-size: 14px !important;
         }
       }
     }
 
     &-label {
-      @media(min-width: 1024px) {
-        font-size: 14px;
+      font-size: 14px;
+      @media(min-width: 1200px) {
+        font-size: 16px !important;
+      }
+      @media(min-width: 1023px) {
+        font-size: 14px !important;
       }
     }
   }
@@ -102,11 +111,14 @@
       }
 
       .sub-title {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 14px;
-
-        @media(min-width: 1024px) {
-          font-size: 12px;
+        
+        @media(min-width: 1023px) {
+          font-size: 14px !important;
+        }
+        @media(min-width: 1200px) {
+          font-size: 16px !important;
         }
       }
 
@@ -117,11 +129,11 @@
         }
 
         &-text {
-          font-size: 14px;
+          font-size: 12px;
           color: $cl-text--secondary;
 
-          @media(min-width: 1024px) {
-            font-size: 12px;
+          @media(min-width: 1200px) {
+            font-size: 14px;
           }
         }
       }
@@ -130,11 +142,25 @@
     .ant-rate {
       .ant-rate-star svg {
         color: $cl-main-gold;
-
-        @media(min-width: 1024px) {
+        @media(min-width: 1023px) {
           width: 14px;
           height: 14px;
         }
+        @media(min-width: 1200px) {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+  .referral-program {
+    .referred-user {
+      font-size: 16px;
+      margin-bottom: 8px;
+      display: inline-block;
+      @media(min-width: 1200px) {
+        font-size: 16px;
+        margin: 0 0px 0 8px;
       }
     }
   }

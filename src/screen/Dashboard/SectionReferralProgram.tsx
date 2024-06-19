@@ -7,7 +7,7 @@ const { Text } = Typography
 
 export const SectionReferralProgram: FC = () => {
   return (
-    <CustomCard title="Referral program">
+    <CustomCard className="referral-program" title="Referral program">
       <Text>Your referral link</Text>
       <Flex align="center" justify="space-between">
         <Text italic>https://freebnbnow.com/ref/193822853358</Text>
@@ -17,8 +17,8 @@ export const SectionReferralProgram: FC = () => {
       </Flex>
 
       <Flex align="center">
-        <Text strong>Referred users</Text>
-        <Tag color="#E2F5FF" style={{ color: '#2578A6', marginLeft: 4 }}>0</Tag>
+        <Text style={{ marginTop: 8 }} strong>Referred users</Text>
+        <Tag color="#E2F5FF" style={{ color: '#2578A6', marginLeft: 8, marginTop: 8}}>0</Tag>
       </Flex>
     </CustomCard>
   )
