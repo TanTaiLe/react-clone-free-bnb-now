@@ -1,3 +1,13 @@
+.sider {
+  flex: none !important;
+  min-width: unset !important;
+  max-width: unset !important;
+  width: 15% !important;
+  background: $cl-main-black !important;
+  @media(min-width: 1024px) {
+  width: 5% !important;
+  }
+}
 .ant-layout {
   background: none;
 }
