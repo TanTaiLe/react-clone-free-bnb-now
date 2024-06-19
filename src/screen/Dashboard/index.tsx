@@ -30,7 +30,7 @@ export const Dashboard = () => {
         <Content className="dashboard-content">
           <Title level={2}>Dashboard</Title>
           <Row gutter={24}>
-            <Col span={15}>
+            <Col lg={17} xl={15}>
               <Space direction="vertical" size="large">
                 <SectionMiner />
                 <SectionSurvey />
@@ -38,7 +38,7 @@ export const Dashboard = () => {
                 <SectionBuyPower />
               </Space>
             </Col>
-            <Col span={9}>
+            <Col lg={7} xl={9}>
               <Space direction="vertical" size="large">
                 <SectionCheckout />
                 <SectionReferralProgram />

@@ -103,12 +103,11 @@
 
     .ant-rate {
       .ant-rate-star svg {
+        color: $cl-main-gold;
         @media(min-width: 1024px) {
           width: 14px;
           height: 14px;
-          color: $cl-main-gold;
         }
-
       }
     }
   }
