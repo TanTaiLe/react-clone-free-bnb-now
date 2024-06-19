@@ -56,25 +56,25 @@ export const SectionBuyPower: FC = () => {
             </Row>
           </Space>
           <Row className="checkout" gutter={[8, 8]}>
-            <Col span={10}>
+            <Col xl={10} lg={12}>
               <Flex>
                 <Text className="checkout-label">Total power:</Text>
                 <Text strong className="checkout-value">100 TH/S</Text>
               </Flex>
             </Col>
-            <Col span={10}>
+            <Col xl={10} lg={12}>
               <Flex>
                 <Text className="checkout-label">Bonus power:</Text>
                 <Text strong className="checkout-value">0 TH/S</Text>
               </Flex>
             </Col>
-            <Col span={10}>
+            <Col xl={10} lg={12}>
               <Flex>
                 <Text className="checkout-label">Daily Profit:</Text>
                 <Text strong className="checkout-value">0.000003013699 BNB</Text>
               </Flex>
             </Col>
-            <Col span={10}>
+            <Col xl={10} lg={12}>
               <Flex>
                 <Text className="checkout-label">Payment cost:</Text>
                 <Text strong className="checkout-value">0.001 BNB</Text>

@@ -18,7 +18,12 @@
     .input-tips {
       font-size: 14px;
       margin: 0 24px 0 8px;
-      color: $cl-main-gold;
+      color: $cl-text-in-white;
+
+      @media(min-width: 1024px) {
+        font-size: 12px;
+        margin: 0 0px 0 8px;
+      }
     }
 
     .checkout {
@@ -30,6 +35,10 @@
         color: #9D9C9B;
         width: 100px;
         margin-right: 8px;
+
+        @media(min-width: 1024px) {
+          width: 100px;
+        }
       }
     }
   }
@@ -47,7 +56,23 @@
 
     &-label,
     &-value {
-      font-size: 14px;
+      font-size: 1px;
+    }
+
+    .ant-space-item {
+      strong {
+        font-size: 15px !important;
+
+        @media(min-width: 1024px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &-label {
+      @media(min-width: 1024px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -105,6 +130,7 @@
     .ant-rate {
       .ant-rate-star svg {
         color: $cl-main-gold;
+
         @media(min-width: 1024px) {
           width: 14px;
           height: 14px;

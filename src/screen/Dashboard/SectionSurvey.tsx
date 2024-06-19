@@ -64,7 +64,7 @@ export const SectionSurvey: FC = () => {
         {
           sampleSurvey.map(({ key, value, time, star }) =>
             <Col span={6} key={key}>
-              <SurveyItem
+              <SurveyItem 
                 value={value}
                 time={time}
                 star={star}

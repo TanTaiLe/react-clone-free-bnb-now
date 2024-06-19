@@ -10,21 +10,12 @@ const { Sider, Content } = Layout;
 
 const { Title } = Typography
 
-
-const siderStyle: React.CSSProperties = {
-  textAlign: 'center',
-  lineHeight: '120px',
-  color: '#fff',
-  backgroundColor: '#1677ff',
-};
-
-
 export const Dashboard = () => {
   return (
     <Layout className="dashboard">
       <CustomHeader />
       <Layout>
-        <Sider width="15%" style={siderStyle}>
+        <Sider className="sider">
           Sider
         </Sider>
         <Content className="dashboard-content">
