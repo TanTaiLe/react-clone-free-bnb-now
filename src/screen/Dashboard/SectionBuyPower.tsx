@@ -47,17 +47,17 @@ export const SectionBuyPower: FC = () => {
             <Space direction="vertical" size="small" style={{ width: '100%' }}>
               <Text>Enter the power you need to buy</Text>
               <Row style={{ width: '100%' }} align="middle">
-                <Col span={16}>
+                <Col sm={24} xs={24} span={16}>
                   <Form.Item<FieldType>
                     name="power"
                   >
                     <Input placeholder="Power amount" />
                   </Form.Item>
                 </Col>
-                <Col span={4}>
+                <Col sm={24} xs={24} span={4}>
                   <Text italic strong className="input-tips">Min: 10TH/S</Text>
                 </Col>
-                <Col span={4}>
+                <Col sm={24} xs={24} span={4}>
                   <CustomButton
                     htmlType="submit"
                     stretch
@@ -68,25 +68,25 @@ export const SectionBuyPower: FC = () => {
               </Row>
             </Space>
             <Row className="checkout" gutter={[8, 8]}>
-              <Col xl={10} lg={12}>
+              <Col xl={10} lg={12} sm={24} xs={24}>
                 <Flex>
                   <Text className="checkout-label">Total power:</Text>
                   <Text strong className="checkout-value">100 TH/S</Text>
                 </Flex>
               </Col>
-              <Col xl={10} lg={12}>
+              <Col xl={10} lg={12} sm={24} xs={24}>
                 <Flex>
                   <Text className="checkout-label">Bonus power:</Text>
                   <Text strong className="checkout-value">0 TH/S</Text>
                 </Flex>
               </Col>
-              <Col xl={10} lg={12}>
+              <Col xl={10} lg={12} sm={24} xs={24}>
                 <Flex>
                   <Text className="checkout-label">Daily Profit:</Text>
                   <Text strong className="checkout-value">0.000003013699 BNB</Text>
                 </Flex>
               </Col>
-              <Col xl={10} lg={12}>
+              <Col xl={10} lg={12} sm={24} xs={24}>
                 <Flex>
                   <Text className="checkout-label">Payment cost:</Text>
                   <Text strong className="checkout-value">0.001 BNB</Text>

@@ -22,7 +22,7 @@ export const Dashboard = () => {
             <SectionBuyPower />
           </Space>
         </Col>
-        <Col lg={7} xl={9}>
+        <Col sm={24} lg={7} xl={9}>
           <Space direction="vertical" size="large">
             <SectionCheckout />
             <SectionReferralProgram />

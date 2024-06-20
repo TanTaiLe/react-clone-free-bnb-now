@@ -21,7 +21,7 @@
 
     .input-tips {
       font-size: 14px;
-      margin: 0 24px 0 4px;
+      margin: 8px 0 12px 0 ;
       color: $cl-text-in-white;
 
       @media(min-width: 1200px) {
@@ -74,6 +74,7 @@
     }
 
     .ant-space-item {
+      
       strong {
         font-size: 14px !important;
         

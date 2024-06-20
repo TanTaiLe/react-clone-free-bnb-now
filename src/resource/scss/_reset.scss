@@ -61,12 +61,29 @@ h4 {
   border: 0;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
 
-  // box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  .ant-table-wrapper {
+    overflow-x: scroll;
+
+    @media (min-width: 575px) {
+      overflow: visible;
+    }
+
+    table {
+      width: 200%;
+
+      @media (min-width: 575px) {
+        width: 100%;
+      }
+    }
+  }
+
   .ant-card-head {
     border: none !important;
     padding: 16px 16px 0 !important;
     min-height: unset !important;
     margin-bottom: -8px !important;
+    word-wrap: break-word !important;
+
 
     @media (min-width: 1200px) {
       padding: 24px 24px 0 !important;
@@ -129,4 +146,3 @@ h4 {
     margin-bottom: 10px !important;
   }
 }
-

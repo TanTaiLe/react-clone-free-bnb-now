@@ -9,7 +9,7 @@ export const SectionMiner: FC = () => {
   return (
     <CustomCard title="Your miner" className='miner'>
       <Row gutter={24}>
-        <Col span={8}>
+        <Col xs={24} sm={8} span={8}>
           <Card className="card-custom">
             <Space direction="vertical" size="middle">
               <Space direction="vertical" size="small">
@@ -22,7 +22,7 @@ export const SectionMiner: FC = () => {
             </Space>
           </Card>
         </Col>
-        <Col span={8}>
+        <Col xs={24} sm={8} span={8}>
           <Card className="card-custom">
             <Space direction="vertical" size="middle">
               <Space direction="vertical" size="small">
@@ -35,7 +35,7 @@ export const SectionMiner: FC = () => {
             </Space>
           </Card>
         </Col>
-        <Col span={8}>
+        <Col xs={24} sm={8} span={8}>
           <Card className="card-custom">
             <Space direction="vertical" size="middle">
               <Space direction="vertical" size="small">
