@@ -11,7 +11,7 @@ const { Text, Link } = Typography
 export const CustomHeader: FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { noti, setNoti } = useContext(NotiContext);
+  const { setNoti } = useContext(NotiContext);
 
   const logout = () => {
     setNoti({ type: 'sucess', message: 'Log out successfully!' })

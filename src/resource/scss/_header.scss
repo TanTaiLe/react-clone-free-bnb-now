@@ -8,6 +8,12 @@
   .logo {
     width: 12%;
   }
+  img {
+    width: 70px !important;
+    @media (min-width: 575px) {
+      width: 100px !important;
+    }
+  }
 
   &-contact {
     color: $cl-main-grey;

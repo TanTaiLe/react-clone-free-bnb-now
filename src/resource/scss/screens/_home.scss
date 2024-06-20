@@ -144,9 +144,11 @@
   table {
     border: 1px solid $cl-main-grey !important;
     width: 200%;
+
     @media (min-width: 575px) {
       width: 100%;
     }
+
     th {
       background-color: $cl-main-gold !important;
 

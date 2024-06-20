@@ -15,7 +15,7 @@ export const SectionTop: FC = () => {
             src="/images/coin.png"
           />
         </Col>
-        <Col md={13} offset={2} xs={24}>
+        <Col md={{ span: 13, offset: 2 }} xs={{ span: 24, offset: 0 }}>
           <SigninForm />
         </Col>
       </Row>
