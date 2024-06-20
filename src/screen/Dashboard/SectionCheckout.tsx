@@ -11,7 +11,7 @@ export const SectionCheckout: FC = () => {
       title={
         <Row align="middle" justify="space-between" gutter={8}>
           <Col xl={17} lg={24} xs={24}>
-            <Space size="small">
+            <Space className="small-title" size="small">
               <Image preview={false} src="/images/dashboard/survey-gift.png" width={24} />
               Click to earn 25 TH/S now
             </Space>

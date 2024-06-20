@@ -78,14 +78,15 @@ h4 {
       }
     }
   }
-
+  .small-title {
+    margin-bottom: 8px;
+  }
   .ant-card-head {
     border: none !important;
     padding: 16px 16px 0 !important;
     min-height: unset !important;
     margin-bottom: -8px !important;
     word-wrap: break-word !important;
-
 
     @media (min-width: 1200px) {
       padding: 24px 24px 0 !important;
@@ -98,6 +99,7 @@ h4 {
     @media (min-width: 1200px) {
       padding: 24px !important;
     }
+    
   }
 
   &.nobody {
