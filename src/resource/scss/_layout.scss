@@ -5,6 +5,10 @@
   background: $cl-main-black !important;
   display: none;
 
+  .ant-layout-sider-children {
+    width: 100%;
+  }
+
   @media (min-width: 575px) {
     display: flex;
   }
