@@ -39,11 +39,11 @@ const items: MenuItem[] = [
 export const CustomMenu: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [menuItems, setMenuItems] = useState([])
+  const [menuItems, setMenuItems] = useState<MenuItem[]>()
   console.log(window.innerWidth)
   useEffect(() => {
     if (window.innerWidth > 575)
-      setMenuItems(items.slice(-1, 2))
+      setMenuItems(items.slice(0, 7))
     else
       setMenuItems(items)
   }, [window.innerWidth])
@@ -59,7 +59,7 @@ export const CustomMenu: FC = () => {
       onClick={onClick}
       mode="horizontal"
       defaultSelectedKeys={[location.pathname]}
-      items={items}
+      items={menuItems}
       style={{ flex: 1, minWidth: 0 }}
     />
   )
