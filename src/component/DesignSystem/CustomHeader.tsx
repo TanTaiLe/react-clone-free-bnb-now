@@ -14,7 +14,7 @@ export const CustomHeader: FC = () => {
   const { setNoti } = useContext(NotiContext);
 
   const logout = () => {
-    setNoti({ type: 'sucess', message: 'Log out successfully!' })
+    setNoti({ type: 'success', message: 'Log out successfully!' })
     navigate('/')
   }
 
