@@ -2,6 +2,8 @@
   background-image: url(/images/dashboard-bg.png);
   background-size: 100% auto;
   background-attachment: fixed;
+  max-height: 100vh;
+  overflow: hidden;
 
   h1,
   h2,
@@ -41,13 +43,15 @@
       * {
         font-size: 14px;
       }
+      
 
       &-label {
         color: #9D9C9B;
         width: 100px;
         margin-right: 8px;
-
-        
+        &-width-auto {
+          width: auto;
+        }
       }
     }
   }

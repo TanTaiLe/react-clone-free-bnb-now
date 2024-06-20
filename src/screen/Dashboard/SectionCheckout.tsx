@@ -12,12 +12,12 @@ export const SectionCheckout: FC = () => {
         <Row align="middle" justify="space-between" gutter={8}>
           <Col xl={17} lg={24}>
             <Space size="small">
-              <Image src="/images/dashboard/survey-gift.png" width={24} />
+              <Image preview={false} src="/images/dashboard/survey-gift.png" width={24} />
               Click to earn 25 TH/S now
             </Space>
           </Col>
           <Col xl={7} lg={24}>
-            <CustomButton>Earn now</CustomButton>
+            <CustomButton stretch>Earn now</CustomButton>
           </Col>
 
         </Row>

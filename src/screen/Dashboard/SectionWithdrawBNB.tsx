@@ -47,13 +47,13 @@ export const SectionWithdrawBNB: FC = () => {
                 <Row className="checkout" gutter={[8, 8]} style={{ width: '100%' }}>
                   <Col xl={13} lg={12}>
                     <Flex>
-                      <Text className="checkout-label">Your Balance:</Text>
+                      <Text className="checkout-label checkout-label-width-auto">Your Balance:</Text>
                       <Text strong className="checkout-value">0.000000789840 BNB</Text>
                     </Flex>
                   </Col>
                   <Col xl={11} lg={12}>
                     <Flex>
-                      <Text className="checkout-label">Minimal withdrawal:</Text>
+                      <Text className="checkout-label checkout-label-width-auto">Minimal withdrawal:</Text>
                       <Text strong className="checkout-value">0.0002 BNB</Text>
                     </Flex>
                   </Col>

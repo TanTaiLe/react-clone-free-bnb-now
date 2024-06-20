@@ -1,55 +1,51 @@
 import { FC } from "react"
 import { Menu } from "antd"
 import type { MenuProps } from 'antd';
+import { useLocation, useNavigate } from "react-router-dom";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
-
-const dashboardMenu: MenuItem[] = [
+const items: MenuItem[] = [
   {
-    key: 1,
+    key: '/dashboard',
     label: 'Dashboard',
-    path: '/Dashboard',
-    iconSrc: '/images/dashboard/dashboard.png'
   }, {
-    key: 2,
+    key: '/dashboard/rewards',
     label: 'Rewards',
-    path: '/Dashboard/Rewards',
-    iconSrc: '/images/dashboard/rewards.png'
   }, {
-    key: 3,
+    key: '/dashboard/deposit',
     label: 'Deposit',
-    path: '/Dashboard/Deposit',
-    iconSrc: '/images/dashboard/depost.png'
   }, {
-    key: 4,
+    key: '/dashboard/withdraw',
     label: 'Withdraw',
-    path: '/Dashboard/Withdraw',
-    iconSrc: '/images/dashboard/withdraw.png'
   }, {
-    key: 5,
+    key: '/dashboard/buy-power',
     label: 'Buy Power',
-    path: '/Dashboard/BuyPower',
-    iconSrc: '/images/dashboard/buy-power.png'
   }, {
-    key: 6,
+    key: '/dashboard/referral',
     label: 'Referral',
-    path: '/Dashboard/Referral',
-    iconSrc: '/images/dashboard/referral.png'
   }, {
-    key: 7,
+    key: 'faqs',
     label: 'FAQs',
-    path: '',
-    iconSrc: '/images/dashboard/faqs.png'
   }
 ]
 
 export const CustomMenu: FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const onClick: MenuProps['onClick'] = (e) => {
+    console.log('click ', e);
+    e.key == 'faqs'
+      ? window.open('https://faq.freebnbnow.com/', '_blank')
+      : navigate(e.key)
+  };
   return (
     <Menu
+      onClick={onClick}
       mode="horizontal"
-      defaultSelectedKeys={['1']}
-      items={dashboardMenu}
+      defaultSelectedKeys={[location.pathname]}
+      items={items}
       style={{ flex: 1, minWidth: 0 }}
     />
   )

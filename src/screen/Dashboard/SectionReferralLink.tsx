@@ -13,7 +13,7 @@ export const SectionReferralLink: FC = () => {
         <Space size="small">
           <Text italic>https://freebnbnow.com/ref/193822853358</Text>
           <CustomButton iconOnly>
-            <Image src="/images/dashboard/copy.png" width={20} />
+            <Image preview={false} src="/images/dashboard/copy.png" width={20} />
           </CustomButton>
         </Space>
       </Space>

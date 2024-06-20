@@ -10,7 +10,7 @@ export const CustomHeader: FC = () => {
   const location = useLocation();
   console.log(location.pathname)
   return (
-    <header className="header">
+    <header className={`header ${location.pathname == '/' && 'header--home'}`}>
       <div className={`${location.pathname == '/' && 'container'}`}>
         <Flex justify="space-between" align="center">
           <Link href="/" className="logo">

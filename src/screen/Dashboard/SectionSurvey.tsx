@@ -53,7 +53,7 @@ export const SectionSurvey: FC = () => {
       title={
         <Flex align="center">
           <Space size="small">
-            <Image src="/images/dashboard/survey-gift.png" width={24} />
+            <Image preview={false} src="/images/dashboard/survey-gift.png" width={24} />
             Complete the surveys from CPX to earn rewards
           </Space>
         </Flex>
@@ -64,7 +64,7 @@ export const SectionSurvey: FC = () => {
         {
           sampleSurvey.map(({ key, value, time, star }) =>
             <Col span={6} key={key}>
-              <SurveyItem 
+              <SurveyItem
                 value={value}
                 time={time}
                 star={star}
