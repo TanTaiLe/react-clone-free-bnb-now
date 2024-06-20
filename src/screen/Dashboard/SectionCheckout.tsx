@@ -1,6 +1,6 @@
 import { CustomButton } from "@component/DesignSystem/CustomButton"
 import { CustomCard } from "@component/DesignSystem/CustomCard"
-import { Flex, Space, Image, Row, Col } from "antd"
+import { Space, Image, Row, Col } from "antd"
 import { FC } from "react"
 
 

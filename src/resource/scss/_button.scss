@@ -36,6 +36,16 @@
     }
   }
 
+  &-type-4 {
+    background: transparent;
+    color: $cl-main-gold !important;
+    border: 1px solid $cl-main-gold !important;
+    &:hover {
+      background: $cl-main-gold !important;
+      color: $cl-main-black !important;
+    }
+  }
+
   &-icon {
     padding: 8px !important;
   }

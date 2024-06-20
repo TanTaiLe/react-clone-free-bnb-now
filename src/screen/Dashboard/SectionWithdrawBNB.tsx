@@ -7,7 +7,7 @@ type FieldType = {
   amount?: number;
 };
 
-const { Text, Title } = Typography
+const { Text } = Typography
 const { Option } = Select
 
 export const SectionWithdrawBNB: FC = () => {
