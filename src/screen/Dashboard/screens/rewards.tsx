@@ -1,4 +1,4 @@
-import { Col, Row, Space, Typography } from "antd";
+import { Col, Row, Space, Typography, Image } from "antd";
 import { SectionMiner } from "../SectionMiner";
 import { SectionCheckout } from "../SectionCheckout";
 import { SectionReferralProgram } from "../SectionReferralProgram";
@@ -7,7 +7,7 @@ import { SectionSurvey } from "../SectionSurvey";
 import { SectionRewardHistory } from "../SectionRewardHistory";
 import { DashboardLayout } from "../DashboardLayout";
 
-const { Title } = Typography
+const { Title, Link } = Typography
 
 export const Rewards = () => {
   return (
@@ -16,6 +16,10 @@ export const Rewards = () => {
       <Row gutter={24} className="dashboard-row">
         <Col lg={17} xl={15}>
           <Space direction="vertical" size="large">
+            <Space size="small" className="news">
+              <Image preview={false} width={24} src="/images/dashboard/news.png" />
+              <Link href="">HOT New generation Telegram wallet, built on BNB</Link>
+            </Space>
             <SectionMiner />
             <SectionBitLabs />
             <SectionSurvey />

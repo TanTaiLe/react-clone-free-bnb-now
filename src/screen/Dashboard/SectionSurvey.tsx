@@ -63,7 +63,7 @@ export const SectionSurvey: FC = () => {
       <Row gutter={[24, 24]}>
         {
           sampleSurvey.map(({ key, value, time, star }) =>
-            <Col xs={24} sm={8} span={6} key={key}>
+            <Col xs={12} sm={8} md={6} key={key}>
               <SurveyItem
                 value={value}
                 time={time}

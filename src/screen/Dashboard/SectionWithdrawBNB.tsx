@@ -16,20 +16,20 @@ export const SectionWithdrawBNB: FC = () => {
       <Form name="withdrawBNB" layout="inline">
         <Space direction="vertical" size="large">
           <Row align="middle" style={{ width: '100%' }}>
-            <Col xs={24} span={6}>
+            <Col xs={24} md={6}>
               <Text className="small-title" strong>Network</Text>
             </Col>
-            <Col xs={24} span={18}>
+            <Col xs={24} md={18}>
               <Select defaultValue="1" style={{ width: '100%', height: 45 }}>
                 <Option value="1">BNB Smart Chain</Option>
               </Select>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col xs={24} span={6}>
+            <Col xs={24} md={6}>
               <Text className="small-title" strong>Amount</Text>
             </Col>
-            <Col xs={24} span={18}>
+            <Col xs={24} md={18}>
               <Space size="small" direction="vertical">
                 <Row align="middle" gutter={8}>
                   <Col xl={20}>
@@ -62,23 +62,23 @@ export const SectionWithdrawBNB: FC = () => {
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6} xs={24}>
+            <Col md={6} xs={24}>
               <Text strong>Fee</Text>
             </Col>
-            <Col span={18} xs={24}>
+            <Col md={18} xs={24}>
               <Text strong>0.00015 BNB</Text>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6} xs={24}>
+            <Col md={6} xs={24}>
               <Text strong>Receive amount</Text>
             </Col>
-            <Col span={18} xs={24}>
+            <Col md={18} xs={24}>
               <Text strong className="highlight">0 BNB</Text>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={18} offset={6} xs={24}>
+            <Col md={18} offset={6} xs={24}>
               <CustomButton>Withdraw</CustomButton>
             </Col>
           </Row>

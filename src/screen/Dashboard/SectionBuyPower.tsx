@@ -47,17 +47,17 @@ export const SectionBuyPower: FC = () => {
             <Space direction="vertical" size="small" style={{ width: '100%' }}>
               <Text>Enter the power you need to buy</Text>
               <Row style={{ width: '100%' }} align="middle">
-                <Col sm={24} xs={24} span={16}>
+                <Col md={16} sm={24} xs={24}>
                   <Form.Item<FieldType>
                     name="power"
                   >
                     <Input placeholder="Power amount" />
                   </Form.Item>
                 </Col>
-                <Col sm={24} xs={24} span={4}>
+                <Col md={4} sm={24} xs={24}>
                   <Text italic strong className="input-tips">Min: 10TH/S</Text>
                 </Col>
-                <Col sm={24} xs={24} span={4}>
+                <Col md={4} sm={24} xs={24}>
                   <CustomButton
                     htmlType="submit"
                     stretch

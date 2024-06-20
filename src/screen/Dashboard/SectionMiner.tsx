@@ -8,7 +8,7 @@ const { Text } = Typography
 export const SectionMiner: FC = () => {
   return (
     <CustomCard title="Your miner" className='miner'>
-      <Row gutter={24}>
+      <Row gutter={{ xs: 16, md: 24 }}>
         <Col xs={24} sm={8} span={8}>
           <Card className="card-custom">
             <Space direction="vertical" size="middle">
