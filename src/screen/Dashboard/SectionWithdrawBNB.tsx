@@ -32,7 +32,7 @@ export const SectionWithdrawBNB: FC = () => {
             <Col xs={24} md={18}>
               <Space size="small" direction="vertical">
                 <Row align="middle" gutter={8}>
-                  <Col xl={20}>
+                  <Col xl={20} xs={17}>
                     <Form.Item<FieldType>
                       name="amount"
                       style={{ width: '100%' }}
@@ -40,7 +40,7 @@ export const SectionWithdrawBNB: FC = () => {
                       <Input placeholder="" />
                     </Form.Item>
                   </Col>
-                  <Col xl={4} xs={24}>
+                  <Col xl={4} xs={7}>
                     <CustomButton stretch type={3}>Max</CustomButton>
                   </Col>
                 </Row>
@@ -62,24 +62,24 @@ export const SectionWithdrawBNB: FC = () => {
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col md={6} xs={24}>
+            <Col md={6} xs={12}>
               <Text strong>Fee</Text>
             </Col>
-            <Col md={18} xs={24}>
-              <Text strong>0.00015 BNB</Text>
+            <Col md={18} xs={12}>
+              <Text strong className="value">0.00015 BNB</Text>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col md={6} xs={24}>
+            <Col md={6} xs={12}>
               <Text strong>Receive amount</Text>
             </Col>
-            <Col md={18} xs={24}>
-              <Text strong className="highlight">0 BNB</Text>
+            <Col md={18} xs={12}>
+              <Text strong className="value highlight">0 BNB</Text>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col md={18} offset={6} xs={24}>
-              <CustomButton>Withdraw</CustomButton>
+            <Col md={{ span: 18, offset: 6 }} xs={{ span: 24, offset: 0 }}>
+              <CustomButton stretch>Withdraw</CustomButton>
             </Col>
           </Row>
         </Space>

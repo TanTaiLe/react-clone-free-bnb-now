@@ -1,7 +1,7 @@
 import { CustomButton } from "@component/DesignSystem/CustomButton"
 import { CustomCard } from "@component/DesignSystem/CustomCard"
 import { Col, Flex, Form, FormProps, Input, Row, Space, Typography, Modal } from "antd"
-import { FC, useState } from "react"
+import { FC, useEffect, useState } from "react"
 import { ModalBonusProgram } from "./ModalBonusProgram"
 
 const { Text } = Typography
@@ -21,6 +21,11 @@ const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
 
 export const SectionBuyPower: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [moreBtnText, setMoreBtnText] = useState('More power with bonus program')
+
+  useEffect(() => {
+    window.innerWidth < 575 && setMoreBtnText('More program')
+  }, [window.innerWidth])
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -35,7 +40,7 @@ export const SectionBuyPower: FC = () => {
       <CustomCard
         className="buy-power"
         title="Buy power"
-        extra={<CustomButton onClick={showModal} type={3} size="sm">More power with bonus program</CustomButton>}
+        extra={<CustomButton onClick={showModal} type={3} size="sm">{moreBtnText}</CustomButton>}
       >
         <Form
           name="buyPower"
@@ -46,15 +51,15 @@ export const SectionBuyPower: FC = () => {
           <Space direction="vertical" size="middle">
             <Space direction="vertical" size="small" style={{ width: '100%' }}>
               <Text>Enter the power you need to buy</Text>
-              <Row style={{ width: '100%' }} align="middle">
-                <Col md={16} sm={24} xs={24}>
+              <Row style={{ width: '100%' }} align="middle" gutter={[0, 12]}>
+                <Col md={16} sm={24} xs={15}>
                   <Form.Item<FieldType>
                     name="power"
                   >
                     <Input placeholder="Power amount" />
                   </Form.Item>
                 </Col>
-                <Col md={4} sm={24} xs={24}>
+                <Col md={4} sm={24} xs={9}>
                   <Text italic strong className="input-tips">Min: 10TH/S</Text>
                 </Col>
                 <Col md={4} sm={24} xs={24}>

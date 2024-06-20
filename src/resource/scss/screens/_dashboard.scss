@@ -16,39 +16,66 @@
 
   form {
     background: #F4F4F4;
-    padding: 24px;
+    padding: 12px;
     border-radius: 4px;
+
+    @media (min-width: 575px) {
+      padding: 24px;
+    }
 
     .input-tips {
       font-size: 14px;
-      margin: 8px 0 12px 0 ;
+      margin: 8px 0 12px 0;
       color: $cl-text-in-white;
 
       @media(min-width: 1200px) {
         font-size: 14px;
         margin: 0 0px 0 4px;
       }
+
       @media(min-width: 1023px) {
         font-size: 14px !important;
         margin: 0 4px 0 0;
-        
+
       }
     }
+
     .highlight {
-      font-size: 20px;
+      font-size: 16px;
       color: $cl-main-gold;
+
+      @media (min-width: 575px) {
+        font-size: 20px;
+      }
+    }
+
+    .value {
+      text-align: right;
+
+      @media (min-width: 575px) {
+        text-align: left;
+      }
     }
 
     .checkout {
       * {
-        font-size: 14px;
+        font-size: 13px;
+
+        @media (min-width: 575px) {
+          font-size: 14px;
+        }
       }
-      
+
 
       &-label {
         color: #9D9C9B;
-        width: 100px;
+        width: auto;
         margin-right: 8px;
+
+        @media (min-width: 575px) {
+          width: 100px;
+        }
+
         &-width-auto {
           width: auto;
         }
@@ -62,12 +89,13 @@
 
   &-content {
     padding: 24px 32px;
-    height: calc(100vh - 54px);
+    height: calc(100vh - 46px);
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
-  
+
     @media (min-width: 575px) {
+      height: calc(100vh - 54px);
       overflow-x: visible;
     }
   }
@@ -80,13 +108,14 @@
     }
 
     .ant-space-item {
-      
+
       strong {
         font-size: 14px !important;
-        
+
         @media(min-width: 1200px) {
           font-size: 16px !important;
         }
+
         @media(min-width: 1023px) {
           font-size: 14px !important;
         }
@@ -95,9 +124,11 @@
 
     &-label {
       font-size: 14px;
+
       @media(min-width: 1200px) {
         font-size: 16px !important;
       }
+
       @media(min-width: 1023px) {
         font-size: 14px !important;
       }
@@ -132,10 +163,11 @@
       .sub-title {
         font-weight: 400;
         font-size: 14px;
-        
+
         @media(min-width: 1023px) {
           font-size: 14px !important;
         }
+
         @media(min-width: 1200px) {
           font-size: 16px !important;
         }
@@ -161,10 +193,12 @@
     .ant-rate {
       .ant-rate-star svg {
         color: $cl-main-gold;
+
         @media(min-width: 1023px) {
           width: 14px;
           height: 14px;
         }
+
         @media(min-width: 1200px) {
           width: 16px;
           height: 16px;
@@ -178,6 +212,7 @@
       font-size: 16px;
       margin-bottom: 8px;
       display: inline-block;
+
       @media(min-width: 1200px) {
         font-size: 16px;
         margin: 0 0px 0 8px;
@@ -196,6 +231,7 @@
   .dashboard-row {
     flex-wrap: wrap-reverse;
     row-gap: 24px;
+
     @media (min-width: 575px) {
       flex-wrap: wrap;
       row-gap: auto;
