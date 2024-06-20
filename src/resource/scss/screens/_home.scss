@@ -1,4 +1,12 @@
 .signin {
+  text-align: center;
+  margin-top: 24px;
+
+  @media (min-width: 575px) {
+    text-align: left;
+    margin-top: 0;
+  }
+
   h1 {
     font-weight: 900 !important;
     margin-bottom: 24px !important;
@@ -7,13 +15,19 @@
 
   &-intro {
     color: $cl-text--secondary;
-    margin-bottom: 16px;
-    display: flex;
+    margin-bottom: 24px;
+    display: block;
+
+    @media (min-width: 575px) {
+      margin-bottom: 16px;
+      display: flex;
+    }
 
     a {
       color: $cl-text-in-white;
       font-weight: 500;
       margin: 0 4px;
+
       &:hover {
         color: $cl-main-gold;
       }
@@ -25,17 +39,39 @@
       padding: 16px 24px;
       font-size: 20px;
       margin-bottom: 8px;
+      width: 100%;
     }
 
-    .ant-form-item-explain {
-      font-size: 14px;
-      font-weight: 500;
-      color: $cl-text-in-white;
+    .ant-form-item {
+      margin-inline: 0;
+
+      @media (min-width: 575px) {
+        margin-inline-end: 16px;
+      }
+
+      &-explain {
+        font-size: 14px;
+        font-weight: 500;
+        color: $cl-text-in-white;
+        margin-bottom: 16px;
+
+        @media (min-width: 575px) {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   &-social {
     margin-top: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 575px) {
+      display: block;
+    }
 
     span {
       color: $cl-text-in-white;
@@ -48,10 +84,12 @@
       margin-right: 16px;
       border-radius: 50%;
       border: 2px solid $cl-main-black;
+
       .ant-image {
         display: flex;
         width: 20px !important;
         height: 20px !important;
+
         img {
           width: 100%;
         }
@@ -63,26 +101,55 @@
 .features {
   background: #f4f4f4;
   text-align: center;
+
   img {
-    width: 240px !important;
+    width: 160px !important;
+    margin: auto;
+
+    @media (min-width: 575px) {
+      width: 240px !important;
+    }
   }
+
   span {
-    line-height: 26px;
+    line-height: 24px;
+    font-size: 14px;
+
+    @media (min-width: 575px) {
+      line-height: 26px;
+      font-size: 16px;
+    }
   }
 }
 
 .transactions {
   text-align: center;
+
   &-item {
     margin-bottom: 24px;
+
+    .ant-table-wrapper {
+      overflow-x: scroll;
+
+      @media (min-width: 575px) {
+        overflow: visible;
+      }
+    }
   }
+
   h3 {
     text-align: left;
   }
+
   table {
     border: 1px solid $cl-main-grey !important;
+    width: 200%;
+    @media (min-width: 575px) {
+      width: 100%;
+    }
     th {
       background-color: $cl-main-gold !important;
+
       &::before {
         display: none;
       }

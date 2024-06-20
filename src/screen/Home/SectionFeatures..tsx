@@ -26,7 +26,7 @@ export const SectionFeatures = () => {
       <Row gutter={{ xs: 8, sm: 16, lg: 24 }}>
         {
           features.length != 0 && features.map((data, key) =>
-            <Col span={8} key={key}>
+            <Col md={8} xs={24} key={key}>
               <Image
                 preview={false}
                 src={data.img}

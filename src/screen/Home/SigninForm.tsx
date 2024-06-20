@@ -36,7 +36,7 @@ export const SigninForm: FC = () => {
         autoComplete="off"
       >
         <Row style={{ width: '100%' }}>
-          <Col span={16}>
+          <Col md={16} xs={24}>
             <Form.Item<FieldType>
               name="address"
               help="Minimal withdrawal: 0.0000001 BNB"
@@ -44,7 +44,7 @@ export const SigninForm: FC = () => {
               <Input placeholder="0xCc8E6d00C17eB431350C6c50XXX" />
             </Form.Item>
           </Col>
-          <Col span={8}>
+          <Col md={8} xs={24}>
             <CustomButton
               stretch
               size="lg"

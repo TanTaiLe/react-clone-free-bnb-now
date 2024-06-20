@@ -12,10 +12,10 @@ export const CustomNoti: FC<Props> = ({ type, message }) => {
   const [api, contextHolder] = notification.useNotification();
 
   useEffect(() => {
-    type && api[type]({
-      message: message,
-      showProgress: true,
-    });
+    // type && api[type]({
+    //   message: message,
+    //   showProgress: true,
+    // });
   }, [type, message])
 
   return (
