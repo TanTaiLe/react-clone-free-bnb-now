@@ -16,20 +16,20 @@ export const SectionWithdrawBNB: FC = () => {
       <Form name="withdrawBNB" layout="inline">
         <Space direction="vertical" size="large">
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6}>
-              <Text strong>Network</Text>
+            <Col xs={24} span={6}>
+              <Text className="small-title" strong>Network</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={24} span={18}>
               <Select defaultValue="1" style={{ width: '100%', height: 45 }}>
                 <Option value="1">BNB Smart Chain</Option>
               </Select>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6}>
-              <Text strong>Amount</Text>
+            <Col xs={24} span={6}>
+              <Text className="small-title" strong>Amount</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={24} span={18}>
               <Space size="small" direction="vertical">
                 <Row align="middle" gutter={8}>
                   <Col xl={20}>
@@ -40,18 +40,18 @@ export const SectionWithdrawBNB: FC = () => {
                       <Input placeholder="" />
                     </Form.Item>
                   </Col>
-                  <Col xl={4}>
+                  <Col xl={4} xs={24}>
                     <CustomButton stretch type={3}>Max</CustomButton>
                   </Col>
                 </Row>
                 <Row className="checkout" gutter={[8, 8]} style={{ width: '100%' }}>
-                  <Col xl={13} lg={12}>
+                  <Col xl={13} lg={12} xs={24}>
                     <Flex>
                       <Text className="checkout-label checkout-label-width-auto">Your Balance:</Text>
                       <Text strong className="checkout-value">0.000000789840 BNB</Text>
                     </Flex>
                   </Col>
-                  <Col xl={11} lg={12}>
+                  <Col xl={11} lg={12} xs={24}>
                     <Flex>
                       <Text className="checkout-label checkout-label-width-auto">Minimal withdrawal:</Text>
                       <Text strong className="checkout-value">0.0002 BNB</Text>
@@ -62,23 +62,23 @@ export const SectionWithdrawBNB: FC = () => {
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6}>
+            <Col span={6} xs={24}>
               <Text strong>Fee</Text>
             </Col>
-            <Col span={18}>
+            <Col span={18} xs={24}>
               <Text strong>0.00015 BNB</Text>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6}>
+            <Col span={6} xs={24}>
               <Text strong>Receive amount</Text>
             </Col>
-            <Col span={18}>
+            <Col span={18} xs={24}>
               <Text strong className="highlight">0 BNB</Text>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={18} offset={6}>
+            <Col span={18} offset={6} xs={24}>
               <CustomButton>Withdraw</CustomButton>
             </Col>
           </Row>

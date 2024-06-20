@@ -45,20 +45,20 @@ export const SectionDepositBNB: FC = () => {
       <Form name="depositBNB" layout="inline" style={{ background: 'none', padding: 0 }}>
         <Space direction="vertical" size="large">
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6}>
-              <Text strong>1. Network</Text>
+            <Col xs={24} span={6}>
+              <Text className="small-title" strong>1. Network</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={24} span={18}>
               <Select defaultValue="1" style={{ width: '100%', height: 45 }}>
                 <Option value="1">BNB Smart Chain</Option>
               </Select>
             </Col>
           </Row>
           <Row align="middle" style={{ width: '100%' }}>
-            <Col span={6}>
-              <Text strong>2. Deposit address</Text>
+            <Col xs={24} span={6}>
+              <Text className="small-title" strong>2. Deposit address</Text>
             </Col>
-            <Col span={18}>
+            <Col xs={24} span={18}>
               {
                 depositAddress
                   ?
