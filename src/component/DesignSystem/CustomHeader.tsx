@@ -1,17 +1,20 @@
 
-import { FC } from "react"
-import { Flex, Typography, Image, Menu, Space } from "antd"
+import { FC, useContext } from "react"
+import { Flex, Typography, Image, Space } from "antd"
 import { useLocation, useNavigate } from "react-router-dom"
 import { CustomMenu } from "./CustomMenu"
 import { CustomButton } from "./CustomButton"
+import { NotiContext } from "../../App"
 
 const { Text, Link } = Typography
 
 export const CustomHeader: FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { noti, setNoti } = useContext(NotiContext);
 
   const logout = () => {
+    setNoti({ type: 'sucess', message: 'Log out successfully!' })
     navigate('/')
   }
 

@@ -5,17 +5,17 @@ import { SectionTop } from "./SectionTop";
 import { SectionFeatures } from "./SectionFeatures.";
 import { CustomHeader } from "@component/DesignSystem/CustomHeader";
 import { SectionTransactions } from "./SectionTransactions";
+import { CustomNoti } from "@component/DesignSystem/CustomNoti";
+import { useContext } from "react";
+import { NotiContext } from "../../App";
 
 const { Content } = Layout;
 
 
 export const Home = () => {
-  const navigate = useNavigate();
+  const { noti } = useContext(NotiContext);
+
   return (
-    // <div>
-    //   <h1>Home</h1>
-    //   <Button type={"primary"} onClick={() => navigate('/dashboard')}>{trans('button.go_to_dashboard')}</Button>
-    // </div>
     <Layout>
       <CustomHeader />
       <Content>
@@ -23,6 +23,8 @@ export const Home = () => {
         <SectionFeatures />
         <SectionTransactions />
       </Content>
+      {noti && <CustomNoti type={noti.type} message={noti.message} />}
+
     </Layout >
   );
 }
