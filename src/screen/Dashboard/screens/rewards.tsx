@@ -13,7 +13,7 @@ export const Rewards = () => {
   return (
     <DashboardLayout>
       <Title level={2}>Rewards</Title>
-      <Row gutter={24}>
+      <Row gutter={24} className="dashboard-row">
         <Col lg={17} xl={15}>
           <Space direction="vertical" size="large">
             <SectionMiner />

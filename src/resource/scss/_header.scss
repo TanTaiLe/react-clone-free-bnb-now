@@ -1,6 +1,7 @@
 .header {
   background: $cl-main-black;
   padding: 0 24px;
+
   &--home {
     padding: 12px 24px;
   }
@@ -8,8 +9,10 @@
   .logo {
     width: 12%;
   }
+
   img {
     width: 70px !important;
+
     @media (min-width: 575px) {
       width: 100px !important;
     }
@@ -17,10 +20,20 @@
 
   &-contact {
     color: $cl-main-grey;
+    font-size: 14px;
+
+    @media (min-width: 575px) {
+      font-size: 16px;
+    }
 
     a {
       color: $cl-main-gold !important;
       margin-left: 8px;
+      font-size: 14px;
+
+      @media (min-width: 575px) {
+        font-size: 16px;
+      }
     }
   }
 

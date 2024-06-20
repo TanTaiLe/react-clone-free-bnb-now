@@ -10,16 +10,15 @@ export const SectionCheckout: FC = () => {
       nobody
       title={
         <Row align="middle" justify="space-between" gutter={8}>
-          <Col xl={17} lg={24} sm={24}>
+          <Col xl={17} lg={24} xs={24}>
             <Space size="small">
               <Image preview={false} src="/images/dashboard/survey-gift.png" width={24} />
               Click to earn 25 TH/S now
             </Space>
           </Col>
-          <Col xl={7} lg={24}>
+          <Col xl={7} lg={24} xs={24}>
             <CustomButton stretch>Earn now</CustomButton>
           </Col>
-
         </Row>
       }
     />

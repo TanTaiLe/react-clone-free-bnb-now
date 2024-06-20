@@ -62,14 +62,16 @@ h4 {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
 
   .ant-table-wrapper {
+    display: block;
     overflow-x: scroll;
 
     @media (min-width: 575px) {
       overflow: visible;
+      display: table;
     }
 
     table {
-      width: 200%;
+      width: 250%;
 
       @media (min-width: 575px) {
         width: 100%;

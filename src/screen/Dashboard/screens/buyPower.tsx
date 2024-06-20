@@ -11,8 +11,9 @@ const { Title } = Typography
 
 export const BuyPower = () => {
   return (
-    <DashboardLayout><Title level={2}>Buy power</Title>
-      <Row gutter={24}>
+    <DashboardLayout>
+      <Title level={2}>Buy power</Title>
+      <Row gutter={24} className="dashboard-row">
         <Col lg={17} xl={15}>
           <Space direction="vertical" size="large">
             <SectionMiner />
