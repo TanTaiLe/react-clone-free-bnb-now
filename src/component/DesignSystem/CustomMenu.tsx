@@ -62,7 +62,7 @@ export const CustomMenu: FC = () => {
       defaultSelectedKeys={[location.pathname]}
       items={menuItems}
       style={{ flex: 1, minWidth: 0 }}
-      overflowedIndicator={<MenuOutlined />}
+      overflowedIndicator={<MenuOutlined style={{ fontSize: 32, marginTop: 16 }} />}
     />
   )
 }
