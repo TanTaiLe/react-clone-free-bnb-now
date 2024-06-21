@@ -1,8 +1,9 @@
-import { FC, useEffect, useState } from "react"
+import { FC, useContext, useEffect, useState } from "react"
 import { Menu } from "antd"
 import type { MenuProps } from 'antd';
 import { useLocation, useNavigate } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
+import { NotiContext } from "../../App";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -41,6 +42,7 @@ export const CustomMenu: FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [menuItems, setMenuItems] = useState<MenuItem[]>()
+  const { setNoti } = useContext(NotiContext);
   console.log(window.innerWidth)
   useEffect(() => {
     if (window.innerWidth > 575)
@@ -51,9 +53,16 @@ export const CustomMenu: FC = () => {
 
   const onClick: MenuProps['onClick'] = (e) => {
     console.log('click ', e);
-    e.key == 'faqs'
-      ? window.open('https://faq.freebnbnow.com/', '_blank')
-      : navigate(e.key)
+    if (e.key == 'faqs')
+      window.open('https://faq.freebnbnow.com/', '_blank')
+    else if (e.key == 'contact')
+      window.location.replace('mailto:contacts@freebnbnow.com')
+    else if (e.key == 'logout') {
+      setNoti({ type: 'success', message: 'Log out successfully!' })
+      navigate('/')
+    } else
+      navigate(e.key)
+
   };
   return (
     <Menu

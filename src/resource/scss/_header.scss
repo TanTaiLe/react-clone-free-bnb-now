@@ -5,6 +5,10 @@
   overflow: hidden;
   position: relative;
 
+  @media (min-width: 575px) {
+    width: 100%;
+  }
+
   &--home {
     padding: 12px 24px;
   }

@@ -45,9 +45,10 @@ export const CustomSideMenu: FC = () => {
 
   const onClick: MenuProps['onClick'] = (e) => {
     console.log('click ', e);
-    e.key == 'faqs'
-      ? window.open('https://faq.freebnbnow.com/', '_blank')
-      : navigate(e.key)
+    if (e.key == 'faqs')
+      window.open('https://faq.freebnbnow.com/', '_blank')
+    else
+      navigate(e.key)
   };
 
   return (
