@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from "react"
 import { Menu } from "antd"
 import type { MenuProps } from 'antd';
 import { useLocation, useNavigate } from "react-router-dom";
+import { MenuOutlined } from "@ant-design/icons";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -61,6 +62,7 @@ export const CustomMenu: FC = () => {
       defaultSelectedKeys={[location.pathname]}
       items={menuItems}
       style={{ flex: 1, minWidth: 0 }}
+      overflowedIndicator={<MenuOutlined />}
     />
   )
 }

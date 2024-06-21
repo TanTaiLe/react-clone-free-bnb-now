@@ -1,6 +1,9 @@
 .header {
   background: $cl-main-black;
   padding: 0 24px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
 
   &--home {
     padding: 12px 24px;
