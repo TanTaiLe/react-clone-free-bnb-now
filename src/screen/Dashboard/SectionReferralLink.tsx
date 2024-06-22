@@ -1,6 +1,6 @@
 import { CustomButton } from "@component/DesignSystem/CustomButton"
 import { CustomCard } from "@component/DesignSystem/CustomCard"
-import { Flex, Typography, Image, Space } from "antd"
+import { Typography, Image, Space } from "antd"
 import { FC } from "react"
 
 const { Text } = Typography

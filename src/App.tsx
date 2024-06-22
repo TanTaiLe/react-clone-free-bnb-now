@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { routes, IRouteConfig } from "@config/router.config";
 import { Notfound } from "@container/Notfound";
@@ -23,17 +23,19 @@ const App: React.FC = () => {
       <AntdConfigProvider>
         <BrowserRouter basename={"/"}>
           <NotiContext.Provider value={{ noti: noti, setNoti: setNoti }}>
-            <Routes>
-              {routes.map((item: IRouteConfig) => (
-                <Route
-                  key={item.name}
-                  path={item.path}
-                  element={item.component}
-                />
-              ))}
+            <Suspense fallback={<div> Please Wait... </div>}>
+              <Routes>
+                {routes.map((item: IRouteConfig) => (
+                  <Route
+                    key={item.name}
+                    path={item.path}
+                    element={item.component}
+                  />
+                ))}
 
-              <Route path={"*"} element={<Notfound />} />
-            </Routes>
+                <Route path={"*"} element={<Notfound />} />
+              </Routes>
+            </Suspense>
           </NotiContext.Provider>
         </BrowserRouter>
       </AntdConfigProvider>

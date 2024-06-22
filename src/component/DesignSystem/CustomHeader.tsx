@@ -20,7 +20,7 @@ export const CustomHeader: FC = () => {
 
   return (
     <header className={`header ${location.pathname == '/' && 'header--home'}`}>
-      <div className={`${location.pathname == '/' && 'container'}`}>
+      <div className={`${location.pathname == '/' ? 'container' : 'container-fluid'}`}>
         <Flex justify="space-between" align="center">
           <Link href="/" className="logo">
             <Image
