@@ -20,6 +20,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Power (TH/S)',
     dataIndex: 'power',
     key: 'power',
+    responsive: ['sm'],
     render: (_, { power, bonus }) => (
       <Flex align="center">
         <Space size="small">
@@ -29,14 +30,45 @@ const columns: TableProps<DataType>['columns'] = [
     )
   },
   {
+    title: 'Power (TH/S)',
+    dataIndex: 'power',
+    key: 'power',
+    width: '40%',
+    responsive: ['xs'],
+    render: (_, { power, bonus }) => (
+      <Space size={4} direction="vertical" align="start">
+        {Intl.NumberFormat().format(power)} <Tag>+{Intl.NumberFormat().format(bonus)}</Tag>
+      </Space>
+    )
+  },
+  {
     title: 'Cost (BNB)',
     dataIndex: 'cost',
     key: 'cost',
+    responsive: ['sm'],
+  },
+  {
+    title: 'Cost (BNB)',
+    dataIndex: 'cost',
+    key: 'cost',
+    width: '20%',
+    responsive: ['xs'],
   },
   {
     title: 'APR',
     dataIndex: 'apr',
     key: 'apr',
+    responsive: ['sm'],
+    render: (apr) => (
+      <Text strong>{apr}%</Text>
+    )
+  },
+  {
+    title: 'APR',
+    dataIndex: 'apr',
+    key: 'apr',
+    width: '25%',
+    responsive: ['xs'],
     render: (apr) => (
       <Text strong>{apr}%</Text>
     )

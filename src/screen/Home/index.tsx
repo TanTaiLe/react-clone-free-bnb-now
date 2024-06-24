@@ -16,9 +16,9 @@ export const Home = () => {
   const { noti } = useContext(NotiContext);
 
   return (
-    <Layout>
+    <Layout >
       <CustomHeader />
-      <Content>
+      <Content className="ant-layout-content--home">
         <SectionTop />
         <SectionFeatures />
         <SectionTransactions />

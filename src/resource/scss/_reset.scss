@@ -47,9 +47,13 @@ h4 {
   align-items: center;
 }
 
-.ant-layout {
+.ant-layout-content {
   height: 100vh;
   overflow: hidden;
+  &--home {
+    height: auto;
+    overflow: visible;
+  }
 }
 
 .ant-rate-star {
@@ -68,18 +72,40 @@ h4 {
 
   .ant-table-wrapper {
     display: block;
-    overflow-x: scroll;
+    // overflow-x: scroll;
 
     @media (min-width: 575px) {
-      overflow: visible;
-      display: table;
     }
 
     table {
-      width: 250%;
+      table-layout: fixed !important;
 
       @media (min-width: 575px) {
-        width: 100%;
+      table-layout: auto !important;
+      }
+    }
+
+    .btn {
+      font-size: 12px !important;
+      padding: 4px 10px !important;
+
+      @media (min-width: 575px) {
+        font-size: 16px !important;
+        padding: 8px 20px !important;
+      }
+    }
+    th, td {
+      padding: 8px 0 !important;
+
+      @media (min-width: 575px) {
+        padding: 16px !important;
+      }
+    }
+    th, td, strong, span, div {
+      font-size: 11px !important;
+
+      @media (min-width: 575px) {
+        font-size: 16px !important;
       }
     }
   }
